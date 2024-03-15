@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/CSS/style.css" />
     <title> Richard Eknes' Portfolio</title>
-    <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
@@ -16,13 +16,13 @@
         <nav>
             <ul>
                 <li>
-                    <a> About Me </a>
+                    <a href="#about"> About Me </a>
                 </li>
                 <li>
-                    <a> My Projects </a>
+                    <a href="#projects"> My Projects </a>
                 </li>
-                <li> 
-                    <a> Contact Info </a> 
+                <li>
+                    <a href="#contact"> Contact Info </a>
                 </li>
                 <li>
                     <a> Resume </a>
@@ -30,6 +30,12 @@
             </ul>
         </nav>
     </header>
+
+    <!--Banner Image /-->
+    <section class="banner">
+        <div>
+            <img src="./assets/images/profilepic.jpg" alt="An image of Richard">
+        </div>
 
     <!--About Me section-->
     <section id="about" class="about">
@@ -40,9 +46,9 @@
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti nostrum magnam animi consectetur accusamus
             repellat mollitia, maiores iusto temporibus distinctio eligendi eos quasi, quam quibusdam! Doloribus illum
-            doloremque deleniti suscipit?
+            doloremque deleniti suscipit? <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, nostrum. Aperiam obcaecati ratione porro quaerat consequatur architecto non suscipit aspernatur sed at asperiores magnam ex error, quisquam omnis, qui cumque.
         </p>
-        
+
     </section>
 
     <!--Projects Section-->
@@ -50,12 +56,69 @@
         <div class="title">
             <h2>My Projects</h2>
         </div>
+        <div class="grid-frame">
+            <div class="repo-grid">
+
+                <a href="https://github.com/fruitxxsnackz/recipe-history-searchboard" target="_blank" class ="Foodiepedia">
+                    <div class = "repo-label">
+                        <h4> Foodiepedia </h4>
+                        <p> HTML, CSS, JS </p>
+                    </div>
+                </a>
+
+                <a href="https://github.com/richardeknes/Challenge-1-Horiseon" target="_blank" class = "Horiseon">
+                    <div class = "repo-label">
+                        <h4> Horiseon </h4>
+                        <p> HTML, SEO </p>
+                    </div>
+                </a>
+                
+                <a href="#" target="_blank"  class="project3">
+                    <div class="repo-label">
+                        <h4> Project 3 </h4>
+                        <p> Placeholder </p>
+                    </div>
+                </a>
+
+                <a href="#" target="_blank"  class="project4">
+                    <div class="repo-label">
+                        <h4> Project 4 </h4>
+                        <p> Placeholder </p>
+                    </div>
+                </a>
+
+                <a href="#" target="_blank"  class="project5">
+                    <div class="repo-label">
+                        <h4> Project 5 </h4>
+                        <p> Placeholder </p>
+                    </div>
+                </a>
+            </div>
+        </div>
     </section>
 
     <!--Contact Info Section (footer)-->
     <footer id="contact" class="contact">
         <div class="title">
             <h2>Contact Info</h2>
+        </div>
+        <div class="content">
+            <div id="contact-info">
+                <ul>
+                    <li>
+                        <a href="mailto:richardeknes@gmail.com"> Email </a>
+                    </li>
+                    <li>
+                        612-867-5309
+                    </li>
+                    <li>
+                        <a href="https://github.com/richardeknes"> Github Profile </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/richard-eknes-8065a8233" target="_blank"> LinkedIn </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
