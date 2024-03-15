@@ -213,3 +213,88 @@ footer ul li a {
 .title h2 {
     font-size: 4em;
 }
+
+
+/* Multile media queries to help accommodate various screen sizes */
+
+/* Query for tablets */
+@media screen and (max-width: 768px) {
+.title h2 {
+    font-size: 35px;
+}
+
+.about-me p {
+    font-size: 16px;
+    /*padding: 0 15px;*/
+    line-height: 1.6;
+}
+}
+
+/* Query for phones or smaller */
+@media screen and (max-width: 575px) {
+    header {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    header nav ul {
+        min-height: 80px;
+        flex-direction: column;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .title {
+        border-bottom: 5px solid;
+        border-right: none;
+        text-align: center;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .about p {
+        font-size: 16px;
+        line-height: 1.6;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .projects {
+        padding: 30px 0;
+    }
+
+    .grid-frame {
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .repo-grid {
+        width: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    footer ul li {
+        padding: 10px;
+        text-align: center;
+    }
+    
+}
