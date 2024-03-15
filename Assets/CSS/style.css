@@ -33,7 +33,7 @@ header h1 {
 
 header a {
     text-decoration: none;
-    color: var(--secondary);
+    color: black;
 }
 
 header nav ul {
@@ -62,11 +62,12 @@ header nav ul a {
     background-position: center;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: left;
 }
 
 .banner img {
-    height: 350px;
+    height: 420px;
+    padding-left: 50px;
 }
 
 /* About Me section styling */
@@ -84,6 +85,75 @@ header nav ul a {
     width: 90%;
 }
 
+/* Project Section styling */
+
+.projects{
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-frame{
+    width: 75%;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+}
+
+.repo-grid{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.project {
+    border: solid;
+    color: black;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.repo-label{
+    background-color: white;
+    color: black;
+    padding: 8px;
+
+}
+
+.Foodiepedia{
+    grid-column: 1/3;
+    grid-row: span 2;
+    background-image: url("../images/Foodiepedia.webp");
+}
+
+.Horiseon{
+    background-image: url("../images/Horiseon.jpg");
+    background-position: 50% 15%;
+}
+
+.project3{
+    background-image: url("../images/project3.jpg");
+    background-position: 50% 15%;
+}
+
+.project4{
+    background-image: url("../images/project4.jpg");
+    background-position: 50% 15%;
+}
+
+.project5{
+    background-image: url("../images/project5.png");
+    background-position: 50% 15%;
+}
+
+
 /*Contact/Footer styling */
 footer {
     display: flex;
@@ -99,19 +169,34 @@ footer ul {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-content: center;
-    font-size: 30px;
-    font-weight: bolder;
+    font-size: 35px;
+
 }
 
 footer ul li {
-    font-weight: bolder;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px auto 0px;
+    border-style: solid; 
+    border-width: 2px;
 }
 
 footer ul li a {
     text-decoration: none;
     color: black;
     padding: 8px;
-    font-weight: bold;
+}
+
+.content {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contact-info{
+    width: 75%    
 }
 
 /*Style all titles. This was orignally done in each section above, moved here to practice DRY coding*/
@@ -122,8 +207,9 @@ footer ul li a {
     padding-right: 40px;
     min-width: 20%;
     max-width: 20%;
+    box-shadow: rgb(127, 127, 127) 3px 0px;
 }
 
 .title h2 {
-    font-size: 3em;
+    font-size: 4em;
 }
